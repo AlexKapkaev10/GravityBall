@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e691bea9edc5c4baa9fc685db1b56181, type: 3}
+  m_Name: LevelData
+  m_EditorClassIdentifier: 
+  startPlatformsCount: 8
+  minDistansPlatform: 1.3
+  maxDistansPlatform: 2.5
+  platformSpeed: 5
+  minPlatformSize: 15
+  maxPlatformSize: 30
+  finishPrefab: {fileID: 4398168222611493801, guid: 20a1d1dc13a2d4dd1803ce041498d7a7, type: 3}
