@@ -95,6 +95,8 @@ public class Character : MonoBehaviour, iControllable
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (isDead) return;
+
         if(collision.gameObject.GetComponent<iCollision>() != null)
         {
             collision.gameObject.GetComponent<iCollision>().Collision(isGameStarting);

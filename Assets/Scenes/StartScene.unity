@@ -673,8 +673,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelsData: {fileID: 11400000, guid: ededea4258c1f46b28becaa5f3eb93a1, type: 2}
   uiController: {fileID: 1166055224}
-  downPointTransform: {fileID: 1676575719}
-  upPointTransform: {fileID: 443042975}
+  downFailPoint: {fileID: 0}
+  upFailPoint: {fileID: 0}
+  audioSource: {fileID: 527045148}
 --- !u!82 &527045148
 AudioSource:
   m_ObjectHideFlags: 0

@@ -21,6 +21,10 @@ public class GameController : MonoBehaviour
 
     private int score;
 
+    private bool isWin;
+
+    private bool isGameOver;
+
     private void Awake()
     {
         instance = this;
@@ -62,11 +66,19 @@ public class GameController : MonoBehaviour
 
     public void Win()
     {
+        if (isGameOver) return;
+
+        isWin = true;
+
         uiController.SelectActivePanel(1);
     }
 
     public void GameOver()
     {
+        if (isWin) return;
+
+        isGameOver = true;
+
         audioSource.volume = 0;
 
         foreach (var platform in platforms)
